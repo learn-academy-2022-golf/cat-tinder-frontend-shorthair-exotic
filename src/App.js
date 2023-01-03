@@ -9,11 +9,12 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import { Routes, Route } from "react-router-dom"
 
+import mockCats from "./mockCats"
 
 const App = () => {
-  const [] = useState()
+  const [cats, setCats ] = useState(mockCats)
 
-  
+  console.log(cats)
   return (
     <>
       <Header />
