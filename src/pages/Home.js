@@ -2,7 +2,9 @@ import React from 'react'
 
 const Home  = () => {
   return (
-    <div> home</div>
+    
+    <div> The choice is up to you</div>
+    
   )
 }
 

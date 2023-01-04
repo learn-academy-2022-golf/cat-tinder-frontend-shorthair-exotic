@@ -1,4 +1,6 @@
 import React from 'react'
+import { Nav, NavItem } from "reactstrap"
+import { NavLink } from "react-router-dom"
 import {
   Card,
   CardHeader,
@@ -11,7 +13,7 @@ const Header = () => {
   return (
     
     
-   // <div>Zoowologiee Match</div>
+   
     <Card
     className="my-2"
     color="primary"
@@ -23,13 +25,38 @@ const Header = () => {
     <CardHeader>
     </CardHeader>
     <CardBody>
-      <CardTitle tag="h5">
+      <CardTitle tag="h2">
       Zoowologiee Match
       </CardTitle>
-      <CardText>
+       <CardText>
         Finally, a dating website for all carbon lifeforms...
+       </CardText>
+
+          <NavItem>
+            <NavLink to="/catindex" className="nav-link">
+       <CardText>
+        View the Animals
+       </CardText>
+            </NavLink>
+          </NavItem>
+
+       <NavItem>  
+       <NavLink to="/catnew" className="nav-link">
+      <CardText>
+        Create a Profile
       </CardText>
+      </NavLink>
+      </NavItem>
+
+      <NavItem>  
+       <NavLink to="/catedit" className="nav-link">
+      <CardText>
+        Edit your Profile
+      </CardText>
+      </NavLink>
+      </NavItem>
     </CardBody>
+    
   </Card>
   )
 }
